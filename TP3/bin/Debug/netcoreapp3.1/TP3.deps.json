@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "TP3/1.0.0": {
+        "dependencies": {
+          "Bateaux": "1.0.0"
+        },
+        "runtime": {
+          "TP3.dll": {}
+        }
+      },
+      "Bateaux/1.0.0": {
+        "runtime": {
+          "Bateaux.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TP3/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Bateaux/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

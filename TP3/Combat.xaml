@@ -1,0 +1,36 @@
+﻿<Window x:Class="TP3.Combat"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TP3"
+        mc:Ignorable="d"
+        Title="Combat" Height="350" Width="800">
+    <Grid Margin="0,0,0,-6">
+        <Canvas x:Name="CanvasCombat"
+            Focusable="True" >
+            <Rectangle x:Name="bateauPirate"
+                       Height="65"
+                       Width="134"
+                       Fill="Red" Canvas.Left="80" Canvas.Top="204"/>
+            <Rectangle x:Name="bateauEscorte"
+                Height="65"
+                Width="134"
+                Fill="Red" Canvas.Left="570" Canvas.Top="204"/>
+            <Button Content="Avancer" Canvas.Left="10" Canvas.Top="10" Width="102" Click="Avancer"/>
+            <Button Content="Tirer" Canvas.Left="10" Canvas.Top="35" Width="102" Click="Tirer"/>
+            <Button Content="Abordage" Canvas.Left="10" Canvas.Top="60" Width="102" Click="Abordage"/>
+            <Rectangle x:Name="equipage"
+                Height="50"
+                Width="24"
+                Fill="Yellow" Canvas.Left="10" Canvas.Top="85"/>
+            <Label x:Name="equipageNb" Content="" FontSize="18" FontWeight="Bold" Canvas.Left="39" Canvas.Top="86" Height="50" Width="70" />
+            <Rectangle x:Name="equipageEnnemie"
+                Height="50"
+                Width="24"
+                Fill="Yellow" Canvas.Left="680" Canvas.Top="86"/>
+            <Label x:Name="equipageNbEnnemie" Content="" FontSize="18" FontWeight="Bold" Canvas.Left="709" Canvas.Top="87" Height="50" Width="70" />
+
+        </Canvas>
+    </Grid>
+</Window>

@@ -1,0 +1,70 @@
+﻿<Window x:Class="TP3.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TP3"
+        mc:Ignorable="d"
+        Title="Window1" Height="250" Width="800"
+        ResizeMode="NoResize">
+
+    <Canvas x:Name="Magasin">
+        <Rectangle x:Name="petitCannon"
+                   Height="50"
+                   Width="24"
+                   Fill="Red" Canvas.Left="46" Canvas.Top="40"/>
+        <Rectangle x:Name="cannonMoyen"
+            Height="50"
+            Width="24"
+            Fill="Red" Canvas.Left="46" Canvas.Top="95"/>
+        <Rectangle x:Name="grosCannon"
+            Height="50"
+            Width="24"
+            Fill="Red" Canvas.Left="46" Canvas.Top="150"/>
+        <Rectangle x:Name="pirate"
+            Height="50"
+            Width="24"
+            Fill="Red" Canvas.Left="426" Canvas.Top="40"/>
+        <Rectangle x:Name="amelioration"
+            Height="50"
+            Width="24"
+            Fill="Red" Canvas.Left="426" Canvas.Top="95"/>
+        <Rectangle x:Name="carteTresor"
+            Height="50"
+            Width="24"
+            Fill="Red" Canvas.Left="426" Canvas.Top="150"/>
+        <Rectangle x:Name="Marchant"
+            Height="50"
+            Width="24"
+            Fill="Red" Canvas.Left="645" Canvas.Top="40"/>
+        <TextBlock Canvas.Left="75" Canvas.Top="40" TextWrapping="Wrap" Height="50" Width="162"><Run Language="en-ca" Text="Rapide, mais peu puissant"/></TextBlock>
+        <TextBlock Canvas.Left="75" Canvas.Top="95" TextWrapping="Wrap" Height="50" Width="162"><Run Language="en-ca" Text="V"/><Run Text="itesse moyenne, d"/><Run Text="é"/><Run Text="gat moyen"/></TextBlock>
+        <TextBlock Canvas.Left="75" Canvas.Top="150" TextWrapping="Wrap" Height="50" Width="162"><Run Language="en-ca" Text="D"/><Run Text="égat élevé, mais vitesse faible"/></TextBlock>
+        <Button Content="Acheter" Canvas.Left="237" Canvas.Top="155" Click="AchatGrosCannon"/>
+        <Button Content="Acheter" Canvas.Left="237" Canvas.Top="100" Click="AchatMoyenCannon"/>
+        <Button Content="Acheter" Canvas.Left="237" Canvas.Top="45" Click="AchatPetitCannon"/>
+        <TextBlock Height="22" Canvas.Left="46" Canvas.Top="13" TextWrapping="Wrap" Width="59"><Run Language="en-ca" Text="Cannons :"/></TextBlock>
+        <TextBlock Height="20" Canvas.Left="237" Canvas.Top="175" TextWrapping="Wrap" Width="45"><Run Language="en-ca" Text="100 or"/></TextBlock>
+        <TextBlock Height="20" Canvas.Left="237" Canvas.Top="120" TextWrapping="Wrap" Width="45" RenderTransformOrigin="0.588,0.603"><Run Language="en-ca" Text="50"/><Run Text=" or"/></TextBlock>
+        <TextBlock Height="20" Canvas.Left="237" Canvas.Top="65" TextWrapping="Wrap" Width="45"><Run Language="en-ca" Text="75"/><Run Text=" or"/></TextBlock>
+        <TextBlock Height="22" Canvas.Left="426" Canvas.Top="13" TextWrapping="Wrap" Width="54"><Run Language="en-ca" Text="A"/><Run Text="utres :"/></TextBlock>
+        <TextBlock Canvas.Left="455" Canvas.Top="40" TextWrapping="Wrap" Height="50" Width="112"><Run Language="en-ca" Text="U"/><Run Text="n nouveau pirate !"/></TextBlock>
+        <Button Content="Acheter" Canvas.Left="572" Canvas.Top="45" Click="AchatPirate"/>
+        <TextBlock Height="20" Canvas.Left="572" Canvas.Top="65" TextWrapping="Wrap" Width="45"><Run Language="en-ca" Text="10"/><Run Text=" or"/></TextBlock>
+        <TextBlock Height="85" Canvas.Left="645" Canvas.Top="98" TextWrapping="Wrap" Width="119"><Run Language="en-ca" Text="Bonjour ! Bienvenue dans le magasin du port ! Peu importe la provenace de votre argent, on le prend !"/></TextBlock>
+        <TextBlock Canvas.Left="455" Canvas.Top="95" TextWrapping="Wrap" Height="50" Width="112"><Run Text="Amélioration de vitesse"/><LineBreak/><Run Language="en-ca" Text="vitesse + 1"/></TextBlock>
+        <Button Content="Acheter" Canvas.Left="572" Canvas.Top="100" Click="AchatAmelioration"/>
+        <TextBlock Height="20" Canvas.Left="572" Canvas.Top="120" TextWrapping="Wrap" Width="45"><Run Language="en-ca" Text="30"/><Run Text=" or"/></TextBlock>
+        <TextBlock Canvas.Left="455" Canvas.Top="150" TextWrapping="Wrap" Height="70" Width="112"><Run Text="U"/><Run Text="ne carte au tresors !"/></TextBlock>
+        <Button Content="Acheter" Canvas.Left="572" Canvas.Top="155" Click="AchatCarte"/>
+        <TextBlock Height="20" Canvas.Left="572" Canvas.Top="175" TextWrapping="Wrap" Width="45"><Run Text="10"/><Run Language="en-ca" Text="00"/><Run Text=" or"/></TextBlock>
+        <Label x:Name="impossible" Content="" Canvas.Left="674" Canvas.Top="42" Height="48" Width="90"/>
+        <Label x:Name="Or" Content="" Canvas.Left="645" Canvas.Top="11" Width="119"/>
+        <Rectangle x:Name="Coin"
+            Height="24"
+            Width="20"
+            Fill="Red" Canvas.Left="620" Canvas.Top="11"/>
+
+    </Canvas>
+
+</Window>
